@@ -8,7 +8,7 @@ print(type(img))
 print(img.shape)
 # px x px
 
-resize_image=cv2.resize(img, (500, 800))
+resize_image=cv2.resize(img, (int(img.shape[1]/2), int(img.shape[0]/2)))
 cv2.imshow("Galaxy", resize_image)
 cv2.waitKey(2000)
 # closes window after 2 seconds
